@@ -8,11 +8,11 @@
 
 Add sengify to the `plugin` array in your `opencode.json` (global or project-level):
 
-​```json
+```json
 {
   "plugin": ["sengify@git+https://github.com/Banyango/sengify.git"]
 }
-​```
+```
 
 Restart OpenCode. The plugin installs through OpenCode's plugin manager and registers all skills.
 
@@ -22,10 +22,10 @@ Verify by asking: "Tell me about your sengify skills"
 
 Use OpenCode's native `skill` tool:
 
-​```
+```
 use skill tool to list skills
 use skill tool to load ingest
-​```
+```
 
 ## Tool Mapping
 
@@ -43,11 +43,11 @@ Skills speak in actions ("create a todo", "dispatch a subagent", "read a file").
 
 ## Pinning a Specific Version
 
-​```json
+```json
 {
   "plugin": ["sengify@git+https://github.com/Banyango/sengify.git#v0.1.0"]
 }
-​```
+```
 
 ## Getting Help
 

@@ -61,7 +61,7 @@ Five slash commands drive the workflow:
     │   └── <slug>/
     │       ├── feature.md          # description + use cases (from feature)
     │       └── tasks.md            # high-level task breakdown (from taskify)
-    └── log.md                      # chronological ingest/query/lint operation log
+    └── log.md                      # chronological ingest operation log
 ```
 
 ## Installation

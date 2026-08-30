@@ -17,7 +17,7 @@ Turn a completed feature page into a high-level task breakdown. This is the last
 
 ### 2. Gather Context
 
-Read every entity page linked from the feature page's `Related Entities`. Read the current codebase structure (directories, existing modules) enough to know what already exists versus what's new — this is the one place sengify looks at code.
+Read every entity page linked from the feature page's `Related Entities`. Read the current codebase structure (directories, existing modules) enough to know what already exists versus what's new — this and `feature`'s fact-finding are the only points where sengify reads code.
 
 ### 3. Draft the Task Breakdown
 
