@@ -1,0 +1,20 @@
+{
+  "name": "sengify",
+  "displayName": "sengify",
+  "description": "LLM-wiki feature planning: ingest docs into a persistent project wiki, grill features into use cases, and taskify them into a plan ready for scalpel",
+  "version": "0.1.0",
+  "author": {
+    "name": "Kyle Reczek",
+    "email": "kyle@banyango.com"
+  },
+  "homepage": "https://github.com/Banyango/sengify",
+  "repository": "https://github.com/Banyango/sengify",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "workflows",
+    "wiki",
+    "planning"
+  ],
+  "skills": "./skills/"
+}
