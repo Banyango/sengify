@@ -1,0 +1,20 @@
+{
+  "name": "sengify-dev",
+  "description": "Development marketplace for the sengify skills plugin",
+  "owner": {
+    "name": "Kyle Reczek",
+    "email": "kyle@banyango.com"
+  },
+  "plugins": [
+    {
+      "name": "sengify",
+      "description": "LLM-wiki feature planning: ingest docs into a persistent project wiki, grill features into use cases, and taskify them into a plan ready for scalpel",
+      "version": "0.1.0",
+      "source": "./",
+      "author": {
+        "name": "Kyle Reczek",
+        "email": "kyle@banyango.com"
+      }
+    }
+  ]
+}
