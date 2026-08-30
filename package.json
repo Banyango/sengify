@@ -1,10 +1,32 @@
 {
-  "name": "${PROJECT_NAME}",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "sengify",
+  "version": "0.1.0",
+  "description": "LLM-wiki feature planning skills: ingest docs into a persistent wiki, grill features into use cases, and taskify them into a plan scalpel can implement",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
-  "private": true
+  "skills": "./skills/",
+  "keywords": [
+    "skills",
+    "agent",
+    "claude",
+    "codex",
+    "cursor",
+    "gemini",
+    "wiki",
+    "planning"
+  ],
+  "author": {
+    "name": "Kyle Reczek",
+    "email": "kyle@banyango.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Banyango/sengify",
+  "repository": "https://github.com/Banyango/sengify",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "private": false
 }
