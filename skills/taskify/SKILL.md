@@ -29,12 +29,12 @@ For each task, determine its **blocked by** list — the other tasks that must l
 
 Show the user the proposed breakdown as a numbered list:
 
-​```
+```
 1. <Task title> — blocked by: none
    <one-line description>
 2. <Task title> — blocked by: 1
    <one-line description>
-​```
+```
 
 Ask whether the granularity and blocking edges look right. Iterate until approved. Do not write the file until approved.
 
@@ -42,7 +42,7 @@ Ask whether the granularity and blocking edges look right. Iterate until approve
 
 Write `.sengify/wiki/features/<slug>/tasks.md`:
 
-​```markdown
+```markdown
 # <Feature Name> — Task Plan
 
 Source feature: [feature.md](./feature.md)
@@ -60,7 +60,7 @@ Source feature: [feature.md](./feature.md)
 **Blocked by:** 1
 
 <description>
-​```
+```
 
 ### 6. Report Next Step
 
