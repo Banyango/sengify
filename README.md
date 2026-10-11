@@ -13,14 +13,14 @@ sengify builds a persistent, queryable project wiki from your product docs (PRDs
 1. Drop external docs anywhere and run `/sengify:ingest <path>` to fold them into a persistent project wiki (`.sengify/wiki/`).
 2. Ask the wiki questions with `/sengify:query <question>` any time you need a cited answer instead of re-reading source docs.
 3. Run `/sengify:lint` periodically to catch contradictions, stale claims, and orphaned pages before they mislead you.
-4. Run `/sengify:feature <idea>` to get grilled — one round of questions at a time — until the feature and its use cases are pinned down and written to the wiki.
-5. Run `/sengify:taskify <slug>` to turn that feature page into a high-level, dependency-ordered task plan.
+4. Run `/sengify:feature <idea>` to get grilled — one question at a time — until the feature and its use cases are pinned down and written to a numbered feature page (`.sengify/wiki/features/<NNN>-<slug>/`).
+5. Run `/sengify:taskify <slug or numeral>` to turn that feature page into a high-level, dependency-ordered task plan; each task inherits the feature's numeral as `<NNN>-<task#>`.
 6. Hand each task to scalpel: `/scalpel:plan <task description>` for file-level `.plan` files, then `/scalpel:implement`.
 
 ### Benefits
 
 1. The wiki compounds — each ingested doc makes the next `query`, `feature`, or `taskify` run smarter, instead of re-reading raw sources every time.
-2. Feature scope gets pinned down by a real interview (one round at a time, with recommended answers) instead of a single freeform prompt.
+2. Feature scope gets pinned down by a real interview (one question at a time, with recommended answers) instead of a single freeform prompt.
 3. `lint` catches contradictions and stale claims before they quietly poison a feature plan.
 4. The handoff to scalpel is a plain document — no lock-in, no required integration.
 
@@ -58,9 +58,9 @@ Five slash commands drive the workflow:
     ├── entities/
     │   └── <entity>.md             # one page per domain entity
     ├── features/
-    │   └── <slug>/
+    │   └── <NNN>-<slug>/           # numbered feature dir, e.g. 003-checkout-retry
     │       ├── feature.md          # description + use cases (from feature)
-    │       └── tasks.md            # high-level task breakdown (from taskify)
+    │       └── tasks.md            # task breakdown, tasks numbered <NNN>-<task#> (from taskify)
     └── log.md                      # chronological ingest operation log
 ```
 
