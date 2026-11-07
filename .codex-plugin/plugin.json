@@ -1,6 +1,6 @@
 {
   "name": "sengify",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "LLM-wiki feature planning: ingest docs into a persistent project wiki, grill features into use cases, and taskify them into a plan ready for scalpel",
   "author": {
     "name": "Kyle Reczek",

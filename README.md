@@ -14,7 +14,7 @@ sengify builds a persistent, queryable project wiki from your product docs (PRDs
 2. Ask the wiki questions with `/sengify:query <question>` any time you need a cited answer instead of re-reading source docs.
 3. Run `/sengify:lint` periodically to catch contradictions, stale claims, and orphaned pages before they mislead you.
 4. Run `/sengify:feature <idea>` to get grilled — one question at a time — until the feature and its use cases are pinned down and written to a numbered feature page (`.sengify/wiki/features/<NNN>-<slug>/`).
-5. Run `/sengify:taskify <slug or numeral>` to turn that feature page into a high-level, dependency-ordered task plan; each task inherits the feature's numeral as `<NNN>-<task#>`.
+5. Run `/sengify:taskify <slug or numeral>` to turn that feature page into a high-level, dependency-ordered task plan; each task inherits the feature's numeral as `<NNN>-<task#>`. Taskify checks other features for prerequisites, links blockers to their task ids, and flags required features that do not yet have task plans.
 6. Hand each task to scalpel: `/scalpel:plan <task description>` for file-level `.plan` files, then `/scalpel:implement`.
 
 ### Benefits
@@ -46,7 +46,7 @@ Five slash commands drive the workflow:
 | `/sengify:query`    | Ask a question against the wiki, get a cited answer                  |
 | `/sengify:lint`     | Audit the wiki for problems — report only, no fixes                  |
 | `/sengify:feature`  | Grill a feature idea into use cases, write a feature page             |
-| `/sengify:taskify`  | Turn a feature page into a high-level, dependency-ordered task plan   |
+| `/sengify:taskify`  | Build a high-level task plan with dependencies within and across features |
 
 ## Wiki Structure
 
